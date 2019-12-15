@@ -1,0 +1,24 @@
+{
+  "name": "jobify",
+  "version": "1.0.0",
+  "description": "Jobify is a simple job board for sites.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jobify",
+    "job"
+  ],
+  "author": "Thiago Ferreira Leal",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.7.3",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.4",
+    "sqlite": "^3.0.3",
+    "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,18 @@
+<%- include('header') %>
+    <h2>
+        Admin Categorias:
+        <a href="/admin/categorias/nova">Nova Categoria</a>
+    </h2>
+    <h4 color: #ff0000>Obs: Só é possível excluir categorias sem vagas cadastradas!</h4>
+    <div>
+            <ul>
+                <% categories.forEach( cat => { %>
+                <li>
+                    <%- cat.category %> |
+                    <a href="/admin/categorias/delete/<%- cat.id %>">Excluir</a> |
+                    <a href="/admin/categorias/editar/<%- cat.id %>">Editar</a>
+                </li>
+                <% }); %>
+            </ul>
+    </div>
+<%- include('footer') %>
